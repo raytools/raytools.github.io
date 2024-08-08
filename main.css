@@ -6,7 +6,7 @@
 	font-optical-sizing: auto;
 	color-scheme: light;
 }
-code, kbd {
+kbd {
 	font-family: "Cascadia Code", "Noto Sans Mono", monospace;
 	font-variant-ligatures: none;
 	padding: 0.1em 0.25em;
@@ -16,6 +16,12 @@ code, kbd {
 	border: 1px solid var(--candy-color-border2);
 	box-shadow: var(--candy-shadow-inset);
 	border-radius: var(--candy-well-radius);
+}
+
+code {
+	font-family: "Cascadia Code", "Noto Sans Mono", monospace;
+	font-variant-ligatures: none;
+	color: var(--candy-color-text2);
 }
 
 body {
