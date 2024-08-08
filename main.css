@@ -6,6 +6,17 @@
 	font-optical-sizing: auto;
 	color-scheme: light;
 }
+code, kbd {
+	font-family: "Cascadia Code", "Noto Sans Mono", monospace;
+	font-variant-ligatures: none;
+	padding: 0.1em 0.25em;
+	box-sizing: border-box;
+	background: var(--candy-color-background3);
+	color: var(--candy-color-text2);
+	border: 1px solid var(--candy-color-border2);
+	box-shadow: var(--candy-shadow-inset);
+	border-radius: var(--candy-well-radius);
+}
 
 body {
 	margin: 0 auto;
@@ -54,7 +65,9 @@ main {
 	margin: 0 auto;
 }
 
-section > h2, .content > h2 {
+section > h1,
+section > h2,
+.content > h2 {
 	padding-top: 1rem;
 	border-top: 1px solid var(--candy-color-border3);
 }
@@ -81,8 +94,15 @@ a.candy-button {
 	gap: 1rem;
 }
 
-.card-deck > .candy-card {
+.card-deck > .candy-card,
+.card-deck > .deck-filler {
 	flex: calc(45ch - 2rem);
+}
+
+.spaceout {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
 }
 
 .card-stack {
